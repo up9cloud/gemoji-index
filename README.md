@@ -15,9 +15,9 @@ A database with indices for Github [gemoji](https://github.com/github/gemoji/blo
 ```html
 <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
 <script>
-  $.getJSON('https://unpkg.com/gemoji-index/json/aliases.json', function (gemoji) {
-    var rand = Math.floor(Math.random() * gemoji.aliases.length) + 1
-    console.log(':' + gemoji.aliases[rand] + ':')
+  $.getJSON('https://unpkg.com/gemoji-index/json/aliases.json', function (aliases) {
+    var rand = Math.floor(Math.random() * aliases.length) + 1
+    console.log(':' + aliases[rand] + ':')
   })
 </script>
 ```
