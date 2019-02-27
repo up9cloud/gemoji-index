@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- stable
+before_script:
+- npm run build
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key:
+    secure: oTF6BeuIty0onWO2o7PqMdmhaYyWzeL45gRdFxoKctu5iAmagVDc/oLwAiVO84AiHgV1L1I4Qc+kRYk316FMvY+SgGT5UV0WLvzuOJhvcgZ+tAJmWD0qi9LFGQMkAmm9UgwI0J9/Ut3SmmHCDT8KceCnnHdXTv/4qJ2itVuUxt8RdZ/OT3wlan0nrdxVV3rZM0bkmeuq1QXg9m/GUW371DdTlzp/cF4bOS0BYXnxsXUn3YG3cDf1nitrNLYT2jiWWVePBvYfiRUKG8aC1Ml3/fJUPHOrBwpKCrlKU6fsszRIV/wHkQ8/FDGSr0ktTuhLjcg8jERaRqsJ5/5zuGUm8chEiykIPnRmJe9vw2ERHIqD2B2aDyOO9SM9c5MutNGsaTTuHFgeDnPTVPdL4FxlnMA/XR6w7QyoZOGeW16AscuTTDEjvlFHPDIghbdIqooWolwC6VcTXk1qGRIqWhHPPWMgRffS0GU5ydoz+YZuMqETTaVjL7Yvurxak/8UPlXAhVxV5is7DGB9Jm12RPgiujDjm58k0e9cJKZPFCR6QU9GwDBL1e671f7ie2NWwFIGi66QoqPyLbiCQ+TFKplFHwQkuH+UryJgav52lCvo1WuBc8Ez+7l9ypr8hsX+U/Ljeh86vzUFYmOXf7TgDFR4joYxkYydj1GoR+fBT0Z/OpQ=
+  on:
+    tags: true
+    repo: up9cloud/gemoji-index
+    branch: master
+  skip_cleanup: true
