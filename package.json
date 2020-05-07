@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "lodash": "^4.17.11",
-    "unicodex": "^0.0.6",
+    "unicodex": "^0.0.9",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   },
